@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+.logo > img {
+    height: 40px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+nav > ul > li > form > button {
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 18px;
+    border: 2px solid white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #fff;
+    color: black;
+    border: none;
+}
+
+.navItem {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.toflextheform {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logForm, .signupForm {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #0F1419;
+}
+
+.signupForm, .logForm > h1 {
+    color: #E1E1E1;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+#submit, #signup {
+    height: 45px;
+    width: 90px;
+    border-radius: 15px;
+    border: none;
+    background-color: #1DA1F2;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#signup {
+    background-color: #9D4EDD;
+}
+
+@media screen and (max-width: 550px) {
+    .logForm, .signupForm {
+        width: 90vw;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    input {
+        width: 80vw;
+    }
+}

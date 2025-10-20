@@ -1,0 +1,34 @@
+<%- include("layout") %>
+    <div class="container">
+        <h1>Users Posts History</h1>
+        <div class="All_preposts" style="height: 75vh;">
+            <% if (typeof Posts !=='undefined' && Array.isArray(Posts) && Posts.length) { %>
+                <% Posts.forEach(e=> { %>
+                    <div class="previousPost" data-id="<%- e._id %>">
+                        <div class="tweetIsHere">
+                            <div class="toolsOfTweet">
+                                <div class="username"><%= e.username %></div>
+                                <div class="infoOfTweet">
+                                    <div class="date"><%= e.date %></div>
+                                </div>
+                            </div>
+                            <div class="actualTweet"><%- e.post.replaceAll("\n", '<br>' ) %></div>
+                        </div>
+                    </div>
+                <% });%>
+            <%}%>
+        </div>
+    </div>
+
+    <div class="Username">
+        <div>
+            <span><img height="25px" src="/asstes/user-circle-stroke-rounded.svg" alt="user-circle-bottom"></span>
+            <span>
+                <% if (typeof user !=='undefined' ) {%>
+                    <%= user %>
+                <%}%>
+            </span>
+        </div>
+    </div>
+
+<script src="/JS/front.js"></script>

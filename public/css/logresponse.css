@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.bodylike {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bitgreyheading {
+    color: #71767B;
+}
+
+.theError {
+    color: #F4212E;
+}
+
+.command {
+    color: #6a6d71;
+}
+
+.showErrorMsg {
+    height: auto;
+    width: 40vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #0F1419;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .bitgreyheading {
+        font-size: 25px;
+    }
+    .theError {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .showErrorMsg {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .showErrorMsg > div > img {
+        width: 40px;
+    }
+    .showErrorMsg {
+        width: 70vw;
+    }
+    .bitgreyheading {
+        font-size: 22px;
+    }
+    .theError {
+        font-size: 19px;
+    }
+}

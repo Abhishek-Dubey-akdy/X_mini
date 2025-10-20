@@ -1,0 +1,48 @@
+<%- include("layout") %>
+    <div class="container">
+
+        <div class="posting">
+            <textarea id="tweet" placeholder="what's happening?"></textarea>
+            <div class="PostbtnAndResponse">
+                <h3 id="response">'''</h3>
+                <button id="btn">Post</button>
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <div class="All_preposts">
+            <% if (typeof array_post !=='undefined' && Array.isArray(array_post) && array_post.length) { %>
+                <% array_post.forEach(e=> { %>
+                    <div class="previousPost" data-id="<%- e._id %>">
+                        <!-- <div class="line"></div> -->
+                        <div class="toolsOfTweet">
+                            <div class="username">
+                                <%= e.username %>
+                            </div>
+                            <div class="infoOfTweet">
+                                <div class="date">
+                                    <%= e.date %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tweetIsHere">
+                            <div class="actualTweet"><%- e.post.replaceAll("\n", '<br>' ) %></div>
+                        </div>
+                    </div>
+                    <% });%>
+                <%}%>
+        </div>
+
+
+        <div class="Username"> 
+            <div class="U_ser">
+                <span><img height="25px" src="/asstes/user-circle-stroke-rounded.svg" alt="user-circle-bottom"></span>
+                <span>
+                    <% if (typeof username !=='undefined' ) {%>
+                        <%= username %>
+                    <%}%>
+                </span>
+            </div>
+        </div>
+
+<script src="/JS/front.js"></script>

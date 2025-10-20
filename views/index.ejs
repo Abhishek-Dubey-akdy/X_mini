@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/log.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/asstes/new-twitter-rectangle-stroke-rounded.svg" alt="logo">
+        </div>
+        <ul class="navItem">
+            <li>
+                <form action="/signup" method="get">
+                    <button type="submit" class="signup">signup</button>
+                </form>
+            </li>
+            <li>
+                <form action="/login" method="get">
+                    <button type="submit">login</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <div class="toflextheform">
+        <form class="logForm" action="/login" method="post">
+            <h1>Log In</h1>
+            <input type="text" placeholder="login Username" name="username">
+            <input type="password" placeholder="Enter password" name="pass">
+            <button id="submit" type="submit">logIn</button>
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
