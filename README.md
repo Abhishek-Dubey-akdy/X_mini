@@ -1,4 +1,5 @@
 # Project: X mini
+## Demo Video: https://x.com/On_Akdy/status/1980602204664000531?t=ys6k7XX4nLYWgsfd49z1Ow&s=19
 ## Discription
 ### concise summamry 
 In this web app a user can post a tweet which he/she will write in a textarea and hit the `post btn` so the other user's can see it in their screen within 4 sec, **But why this timelag** (*I will Explain it to you in the next section*), and the user can see the post of other users as well, and also all the tweets will be sorted like a stack means LIFO manner. A user can see it's post history of all the tweets he/she had posted yet.
