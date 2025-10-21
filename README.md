@@ -1,4 +1,9 @@
 # Project: X mini
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Abhishek-Dubey-akdy/X_mini/main/Image/Screenshot%202025-10-21%20175307.png" alt="UI of the X mini Project" width="600"/>
+</p>
+
 ## Demo Video: https://x.com/On_Akdy/status/1980602204664000531?t=ys6k7XX4nLYWgsfd49z1Ow&s=19
 ## Discription
 ### concise summamry 
