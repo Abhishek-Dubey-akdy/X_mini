@@ -5,11 +5,11 @@ import bcrypt from "bcrypt";
 import { UserDataset } from "./model/user.js";
 import {Tweets} from "./model/PostSchema.js"
 import session from "express-session";
-
+import 'dotenv/config';
 
 // connecting to the database
 (async () => {
-    let mongoDB_url = "mongodb://localhost:27017/post_timePass";
+    let mongoDB_url = process.env.mongoDB_uri;
     try {
         await mongoose.connect(mongoDB_url);
         console.log("connected to DB")
